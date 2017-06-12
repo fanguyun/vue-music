@@ -7,3 +7,6 @@
 [0610/161629.748:ERROR:exception_handler_server.cc(524)] ConnectNamedPipe: 管道正在被关闭。 (0xE8)
 [0610/173455.106:ERROR:exception_handler_server.cc(524)] ConnectNamedPipe: 管道正在被关闭。 (0xE8)
 [0610/175254.007:ERROR:exception_handler_server.cc(524)] ConnectNamedPipe: 管道正在被关闭。 (0xE8)
+[0611/215342.976:ERROR:process_reader_win.cc(233)] ReadMemory at 0x186000 of 40960 bytes failed: 仅完成部分的 ReadProcessMemory 或 WriteProcessMemory 请求。 (0x12B)
+[0611/215342.977:ERROR:crash_report_exception_handler.cc(111)] WriteEverything failed
+[0611/215342.978:ERROR:scoped_process_suspend.cc(38)] NtResumeProcess: 已尝试访问正在退出的过程。  (0xc000010a)
