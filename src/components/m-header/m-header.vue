@@ -22,11 +22,11 @@
     display: inline-block;
     vertical-align: top;
     margin-top: 6px;
-    width: 30px;
-    height: 32px;
+    width: 28px;
+    height: 30px;
     margin-right: 9px;
     bg-image('logo');
-    background-size: 30px 32px;
+    background-size: 28px 30px;
   }
   
   .text {
