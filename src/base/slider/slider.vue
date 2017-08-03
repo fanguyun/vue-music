@@ -40,12 +40,12 @@ export default {
       this._setSliderWidth()
       this._initDots()
       this._initSlider()
-      if(this.autoPlay){
+      if (this.autoPlay) {
         this._play()
       }
     }, 20)
     window.addEventListener('resize', () => {
-      if(!this.slider){
+      if (!this.slider) {
         return
       }
       this._setSliderWidth(true)
@@ -67,7 +67,7 @@ export default {
       if (this.loop && !isResize) {
         width += 2 * sliderWidth
       }
-      this.$refs.sliderGroup.style.width = width +'px'
+      this.$refs.sliderGroup.style.width = width + 'px'
     },
     _initDots() {
       this.dots = new Array(this.children.length)
@@ -83,14 +83,14 @@ export default {
         snapSpeed: 400
       })
 
-      this.slider.on('scrollEnd', () =>{
+      this.slider.on('scrollEnd', () => {
         let pageIndex = this.slider.getCurrentPage().pageX
-        if (this.loop){
+        if (this.loop) {
           pageIndex -= 1
         }
         this.currentPageIndex = pageIndex
 
-        if(this.autoPlay){
+        if (this.autoPlay) {
           clearTimeout(this.timer)
           this._play()
         }
@@ -98,7 +98,7 @@ export default {
     },
     _play() {
       let pageIndex = this.currentPageIndex + 1
-      if(this.loop){
+      if (this.loop) {
         pageIndex += 1
       }
       this.timer = setTimeout(() => {

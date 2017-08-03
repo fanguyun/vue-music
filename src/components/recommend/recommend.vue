@@ -38,8 +38,8 @@
   import Loading from 'base/loading/loading'
   import Scroll from 'base/scroll/scroll'
   import Slider from 'base/slider/slider'
-  import {getRecommend,getDiscList} from 'api/recommend'
-  import {ERR_OK} from 'api/config'
+  import { getRecommend, getDiscList } from 'api/recommend'
+  import { ERR_OK } from 'api/config'
 
   export default {
     data() {
@@ -62,13 +62,13 @@
       },
       _getDiscList() {
         getDiscList().then((res) => {
-          if(res.code === ERR_OK) {
+          if (res.code === ERR_OK) {
             this.discList = res.data.list
           }
         })
       },
       loadImage() {
-        if(!this.checkLoaded){
+        if (!this.checkLoaded) {
           this.$refs.scroll.refresh()
           this.checkLoaded = true
         }
